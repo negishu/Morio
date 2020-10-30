@@ -1,0 +1,87 @@
+body {
+  background-image: url("morio.bg.image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow:hidden;
+}
+
+html, .text, .display {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Press Start';
+  z-index: 1;
+  -webkit-font-smoothing: none;
+  -webkit-user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  left:0;
+}
+
+.box-orange {
+  overflow:hidden;
+  position: absolute;
+  background: orange;
+  width: 15%;
+  height:13%;
+  top: 85%;
+  left: 2%;
+}
+.box-orange iframe,
+.box-orange object,
+.box-orange embed {
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+
+/*
+ * Game objects
+ */
+.display {
+  margin: 12px 12px 12px 12px;
+  position: fixed;
+  text-align: center;
+  font-size: 32px;
+}
+.indisplay {
+  margin: 7px 14px 0 14px;
+  text-align: center;
+  z-index: 14;
+}
+.indisplay.counter, .indisplay.seed {
+  position: fixed;
+  padding: 5px 8px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+}
+.indisplay.counter { right: 0; }
+.indisplay.seed { left: 0; }
+
+.text {
+  position: absolute;
+  z-index: 14;
+  text-align: left;
+  line-height: 100%;
+  vertical-align: middle;
+}
+
+/* .text * {
+  margin: 0;
+} */
+
+.score {
+  width: 35px;
+  height: 14px;
+  font-size: 21px;
+  z-index: 14;
+}
